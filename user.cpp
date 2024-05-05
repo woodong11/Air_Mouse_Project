@@ -3,7 +3,7 @@
 int main()
 {
     //serial init
-    Serial* serial = new Serial("COM9", 115200);
+    Serial* serial = new Serial("COM9", 115200);                // must change to yours
     if (!serial->isConnected()) return 0;
 
     char buf[255];
@@ -17,7 +17,6 @@ int main()
         //if (parsed != 4) {
         //    continue;  // If parsing failed or incomplete, skip to the next iteration
         //}
-
 
 
         int off_x = -(ax / 1000) * 3;
@@ -40,8 +39,17 @@ int main()
             Sleep(500);
         }
 
+         else if (az == 3) {
+            mouse_event(MOUSEEVENTF_LEFTDOWN, 10, 10, 0, 0);	//왼쪽 누르기
+            Sleep(100);
+            mouse_event(MOUSEEVENTF_LEFTUP, 10, 10, 0, 0);		//왼쪽 떼기
+            Sleep(500);
+             mouse_event(MOUSEEVENTF_LEFTDOWN, 10, 10, 0, 0);	//왼쪽 누르기
+            Sleep(100);
+            mouse_event(MOUSEEVENTF_LEFTUP, 10, 10, 0, 0);		//왼쪽 떼기
+            Sleep(500);
+        }
         
-
 
         POINT p;
         GetCursorPos(&p);
