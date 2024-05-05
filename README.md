@@ -1,5 +1,5 @@
 # Air_mouse_pjt
-Renesas 보드와 MPU6050의 자이로센서를 이용한 Air Mouse 프로젝트입니다.
+Renesas 보드와 MPU6050의 자이로센서를 이용해, 펌웨어로 제작한 Air Mouse 프로젝트입니다.
 ![image](https://github.com/woodong11/Air_mouse_pjt/assets/91379630/44142da7-f4d4-4883-9d1f-cf29327fb66a)
 [![Video Label](http://img.youtube.com/vi/wf0AXh3au8c/0.jpg)](https://youtu.be/wf0AXh3au8c)
 
